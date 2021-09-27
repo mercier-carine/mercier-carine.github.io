@@ -1,0 +1,135 @@
+@keyframes anim_accueil {
+    0% {
+        transform: translateY(10vh);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+html {
+    font-size: 62.5%;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container {
+    color: black;
+}
+
+.navbar {
+    color: black;
+    flex-wrap: nowrap;
+    border-bottom: none;
+    padding: 15px 0;
+}
+
+.navbar-scroll {
+    padding: 0;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+    transition-duration: 0.6s;
+}
+.btn {
+    margin-top: 25px;
+    padding: 15px 25px;
+    background: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    border-radius: 50px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+.nav-item {
+    color: black;
+    font-size: 3rem;
+    a {
+        color: black;
+        font-size: 2rem;
+    }
+}
+
+h1 {
+    padding: 100px;
+    text-align: center;
+    color: pink;
+    font-size: 4rem;
+}
+
+.message {
+    animation-name: anim_accueil;
+    animation-duration: 3000ms;
+    animation-delay: 500ms;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#msgacceuil {
+    width: auto;
+    text-align: center;
+    font-size: 2rem;
+    padding: 60px;
+    color: black;
+}
+
+#granim-canvas {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
+
+/* 
+  .navbar:not(.fixed) {
+    background: transparent;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .navbar:not(.fixed) .navbar-brand {
+    width: 100%;
+    text-align: center;
+    font-size: 8rem;
+    margin-top: 20px;
+    color: #f2f0f1;
+  }
+  @media only screen and (max-width: 991px) {
+    .navbar:not(.fixed) .navbar-brand {
+      font-size: 4.8rem;
+    }
+  }
+  .navbar:not(.fixed) .navbar-brand > img {
+    display: initial;
+    position: relative;
+    top: 40px;
+  }
+  
+  .navbar.fixed .navbar-brand {
+    font-size: 3.6rem;
+  }
+  
+  @media only screen and (max-width: 991px) {
+    .navbar {
+      margin-bottom: 0;
+    }
+  }
+  
+  .navbar-transparent .navbar-nav > li > a {
+    display: inline-block;
+    color: black;
+    text-shadow: none;
+    letter-spacing: 2px;
+    font-size: 1rem;
+  }
+  
+  .navbar-toggler {
+    margin-top: 20px;
+  } 
+  .btn:hover {
+    background: linear-gradient(120deg, #8fd3f4 0%, #84fab0 100%);
+  }
+  */
