@@ -1,0 +1,26 @@
+{
+  "name": "portefoliocarine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^5.1.1",
+    "granim": "^2.0.0",
+    "node-js": "^1.0.0",
+    "node-sass": "^6.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Carinedu02/portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Carinedu02/portfolio/issues"
+  },
+  "homepage": "https://github.com/Carinedu02/portfolio#readme"
+}
