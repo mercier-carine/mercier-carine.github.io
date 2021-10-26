@@ -1,3 +1,4 @@
+// background en dégradé de couleurs //
 let granimInstance = new Granim({
   element: "#granim-canvas",
   name: "granim",
@@ -12,48 +13,39 @@ let granimInstance = new Granim({
   },
 });
 
-// import Typewriter from "typewriter-effect/dist/core";
+// Affichage de la navbar complète dès que l'on dépasse 100px au scroll et dispartion dès que l'on remonte sur le site
+let navbarElement = document.querySelector(".navbar");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    navbarElement.classList.add("fixed-top", "fixed");
+  } else {
+    navbarElement.classList.remove("fixed-top", "fixed");
+  }
+});
 
-// new Typewriter("#typewriter", {
-//   strings: ["Hello", "World"],
-//   autoStart: true,
-// });
+//Ajoute un padding top pour toutes les sections, en faisant un calcul injecté dans la propriét padding top
+//le calcul comprend la récupération de la hauteur du menu, auquel on ajoute 30px pour épurer lors du clic sur le menu
+$("section").css("paddingTop", parseFloat($("#menu").css("height")) + 30);
 
-// $(document).ready(function () {
-//   var scrollLink = $(".scroll");
+//On ajuste la taille du dégradé, pour qu'il soit égal à la hauteur total du body, après les modifications faîtes
+// précédemment sur la hauteur des sections.
+$("#granim-canvas").height($("body").height());
 
-//   scrollLink.click(function (e) {
-//     e.preventDefault();
-//     $("body,html").animate(
-//       {
-//         scrollTop: $(this.hash).offset().top,
-//       },
-//       1000
-//     );
-//   });
+$("#menu")
+  .find("a")
+  .on("click", function () {
+    // $("section").css("paddingTop", parseFloat($("#menu").css("height")) + 30);
+    $("#granim-canvas").height($("body").height());
+  });
 
-//   $(window).scroll(function () {
-//     var scrollbarLocation = $(this).scrollTop();
+$(window).resize(function () {
+  $("#granim-canvas").height($("body").height());
+});
 
-//     scrollLink.each(function () {
-//       var sectionOffset = $(this.hash).offset().top - 20;
-
-//       if (sectionOffset <= scrollbarLocation) {
-//         $(this).parent().addClass("active");
-//         $(this).parent().siblings().removeClass("active");
-//       }
-//     });
-//   });
-// });
-
-// $(function () {
-//   var navbar = $(".navbar");
-
-//   $(window).scroll(function () {
-//     if ($(window).scrollTop() <= 40) {
-//       navbar.removeClass("navbar-scroll");
-//     } else {
-//       navbar.addClass("navbar-scroll");
-//     }
-//   });
-// });
+//effet typewriter//
+var typewriter = document.getElementById("typewriter");
+new Typewriter(typewriter, {
+  strings: ["Carine Mercier"],
+  autoStart: true,
+  loop: true,
+});

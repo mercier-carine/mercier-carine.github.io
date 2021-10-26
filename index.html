@@ -3,73 +3,302 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/bootstrap.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <title>Portefolio</title>
-  </head>
-  
-<body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-transparent bg-transparent fixed-top">
-      <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-toggler"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link scroll" href="#header">Accueil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scroll" href="#profil">Présentation</a>
-            </li>
-              <li class="nav-item">
-              <a class="nav-link scroll" href="#cv">CV</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link scroll" href="#projects">Projets</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <div class="block" id="presentation">      
-       <div class="message" id="msgacceuil">Développeur Web Junior</div>
-       <div >
-        <canvas id="granim-canvas">
-      </canvas>
-      <h1>Mercier Carine</h1>     
-    </div>    
-  </header>
 
-    <main>
-      <section id="profil" class="container presentation">
-        <div class="block">
-         
-          <h2>Présentation</h2>
-          <p>Développeuse Web Junior, je suis actuellement à la recherche d'un stage dans une entreprise à taille humaine dans laquelle je pourrai m'épanouir pleinement</p>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <header>
+      <nav
+        id="menu"
+        class="navbar fixed-top navbar-expand-lg navbar-dark"
+      >
+        <div class="back">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a
+                class="nav-link active scroll"
+                aria-current="page"
+                href="#profil"
+                >Accueil</a
+              >
+              <a class="nav-link scroll"  href="#presentation">Présentation</a>
+              <a class="nav-link scroll"  href="#hobbies"     >Hobbies</a>
+              <a class="nav-link scroll"  href="#projets"     >Projets</a>
+              <a class="nav-link scroll"  href="#contact"     >Contact</a>
+
+              <a
+                class="nav-link scroll"
+                href="./pdf/Mercier-Carine-cv-visuel.pdf"
+                >CV</a
+              >
+
           </div>
         </div>
+      </nav>
+      <section class="back" id="profil">
+        <br />
+        <div class="message" id="msgacceuil">Développeuse Web Junior</div>
+        <div>
+          <canvas id="granim-canvas"> </canvas>
+          <h1 id="typewriter">Mercier Carine</h1>
+        </div>
       </section>
-      
+    </header>
 
-      <section id="cv">
-
+    <main>
+      <section id="presentation" class="back text-align center">
+        <div>
+          <h2>Présentation</h2>
+          <p>
+            Développeuse Web Junior, je suis actuellement à la recherche d'un
+            stage dans une entreprise à taille humaine dans laquelle je pourrai m'épanouir pleinement.<br>
+            Issue de l'industrie agro-alimentaire dans laquelle j'ai évolué durant nos 24 années de collaboration, je saurai intégrer sans difficuté à une nouvelle équipe et ferai preuve de professionnalisme dans l'élaboration des projets qui me seront confiés. 
+          </p>
+          <div id="footwrap">                
+          <div class="row">
+            <div class="col-lg-3"></div>
+                <div class="col-lg-6 " style="text-align: center;">
+                <p>
+                  <t>Email :</t><span> merciercarine02@gmail.com</span> <br/>
+                </p>
+                <p>
+                  <t>Adresse :</t><span> 3 rue Dusolon <br/> 02140 Vervins, France.</span> <br/>
+                </p>
+                <p>
+                  <t>Telephone :</t><span>+33 6 30 11 82 64</span><br/>
+                </p>
+                <p>
+                <t>Suivez-moi sur :</t><span>
+                 <a href="https://www.linkedin.com/in/mercier-carine-01181519b/" target="_blank"></span><i class="fab fa-linkedin-in">  Mercier Carine</i></a>
+              </p>
+            </div>
+        </div>
       </section>
 
+      <section class="back" id="hobbies">
+        <h2>Mes hobbies</h2>
+        <div class="flex-center">
+          <article>
+            <i class="fas fa-chess fa-3x"></i>
+            <h2>Les échecs</h2>
 
-      <section id="projects">
+            <p>Quoi de mieux que les échecs pour une réflexion et une concentration maximale</p>
+          </article>
 
+          <article>
+            <i class="fas fa-book fa-3x"></i>
+            <h2>La lecture</h2>
+            <p>
+              Que se soit un livre ou un quotidien national, simplement un
+              moment d'évasion
+            </p>
+          </article>
+
+          <article>
+            <i class="fas fa-music fa-3x"></i>
+            <h2>La musique</h2>
+            <p>
+              Même en bruit de fond, quelque soit le genre, la musique est
+              source de créativité
+            </p>
+          </article>
+
+          <article>
+            <i class="fas fa-globe fa-3x"></i>
+            <h2>La planète</h2>
+            <p>Protéger la planète pour l'avenir de nos enfants</p>
+          </article>
+        </div>
       </section>
-   </main>
-   <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
-   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-   <script src="./node_modules/granim/dist/granim.min.js"></script>
-  <script src="index.js"></script>
+      <section class="back" id="projets">
+        <h2>Mes projets</h2>
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item ">
+       <a href="img/screencapture-marvel-univers.png">       <img
+                src="img/marvel.PNG"
+                class="d-block w-100"
+                alt="représentation de la maquette Marvel"
+              /></a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Marvel univers</h5>
+                <p>Première maquette de projet en html /css</p>
+              </div>
+            </div>
+            <div class="carousel-item active">
+            <a href="img/screencapture-hardis.png">  <img src="img/hardis.PNG" 
+              class="d-block w-100" alt="représentation de la maquette du Group Hardis" /> </a>
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Hardis Group</h5>
+                <p>Projet de vacances Hardis Group</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <a href="img/Disneyhome.png"><img src="img/disney.PNG" class="d-block w-100" alt="Représentation de la page d'acceuil Disney" />
+              <div class="carousel-caption d-none d-md-block"></a>
+                <h5>Disney plus</h5>
+                <p>Projet Disney plus en React </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <section class="back"id="contact">
+      <!-- Wrapper container -->
+      <div class="container ">
+        <h2>Pour me contacter</h2>
+        <!-- Bootstrap 5 starter form -->
+        <div class="flex-container">
+        <form id="contactForm">
+          <!-- Nom input -->
+          <div class="mb-3">
+            <label class="form-label" for="name">Nom</label>
+            <input
+              class="form-control"
+              id="name"
+              type="text"
+              placeholder="Nom"
+            />
+          </div>
+
+          <!-- Email addresse input -->
+          <div class="mb-3">
+            <label class="form-label" for="emailAddress">Adresse mail</label>
+            <input
+              class="form-control"
+              id="emailAddress"
+              type="email"
+              placeholder="Adresse mail"
+            />
+          </div>
+
+          <!-- Message input -->
+          <div class="mb-3">
+            <label class="form-label" for="message">Message</label>
+            <textarea
+              class="form-control"
+              id="message"
+              type="text"
+              placeholder="Saisissez votre message ici"
+              style="height: 10rem"
+            ></textarea>
+          </div>
+
+          <!-- bouton envoyer(submit) -->
+          <div class="d-grid">
+            <button class="btn btn-primary btn-lg" type="submit">Envoyer</button>
+          </div>
+        </form>
+      </div>
+      </div>
+    </section>
+   
+
+    <footer>
+      <span>Designed by Mercier Carine - 2021</span>
+    </footer>
+
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./node_modules/granim/dist/granim.min.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
