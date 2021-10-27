@@ -1,4 +1,5 @@
 // background en dégradé de couleurs //
+
 let granimInstance = new Granim({
   element: "#granim-canvas",
   name: "granim",
